@@ -1,3 +1,13 @@
+---
+name: deep-teach
+description: >
+  Deep Teaching Mode — After every programming operation, automatically output expert-level
+  technical analysis cards covering: what technology was used, why it was chosen, deep-dive
+  into underlying principles (source-code level), alternative solutions comparison with performance data,
+  advantages summary with quantitative evidence, and knowledge transfer paths.
+  Transforms AI from "doing for you" to "teaching you" so users truly learn while building projects.
+---
+
 # deep-teach — 深度教学模式
 
 > **版本**: 1.0.0
