@@ -229,7 +229,7 @@ WHERE metadata @> '{"seo": {"keywords": "database"}}';
   3. **Checkpoint**：周期性将 dirty buffer 刷盘并截断 WAL，平衡性能与恢复时间
   4. **Autovacuum Daemon**：后台进程自动清理 dead tuples、冻结旧事务 ID、更新统计信息
 
-- **执行流程（一次 SELECT）：
+- **执行流程（一次 SELECT）**：
   ```
   Parser → Analyzer → Rewriter → Planner → Executor
                                               ↓

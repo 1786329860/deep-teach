@@ -2,7 +2,7 @@
 
 > **让 AI 从「代做」变为「教做」—— 每一步编程操作后自动输出专家级技术解析卡片**
 
-[![Skill Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/1786329860/deep-teach)
+[![Skill Version](https://img.shields.io/badge/version-1.1.0-blue)](https://github.com/1786329860/deep-teach)
 [![Trigger](https://img.shields.io/badge/trigger-always--on-green)](https://github.com/1786329860/deep-teach)
 [![Depth](https://img.shields.io/badge/depth-expert-red)](https://github.com/1786329860/deep-teach)
 [![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
@@ -25,7 +25,7 @@ deep-teach:   AI 做 → 解析为什么这么做 → ✅ 真正理解
 
 ## 🎯 解决的问题
 
-| 痛状 | deep-teach 的解法 |
+| 痛点 | deep-teach 的解法 |
 |------|-------------------|
 | AI 写完代码，但不知道为什么要用这个库 | 每步操作附带「为什么选择这项技术」的完整分析 |
 | 只会用不会选，换个场景又不会了 | 每张卡片包含「可替代方案对比」，建立全局视野 |
@@ -121,7 +121,7 @@ deep-teach/
 | 模块 | 内容 | 目的 |
 |------|------|------|
 | **M1 角色定义** | 双重身份（工程师 + 教授）+ 核心原则 | 定义 AI 行为准则 |
-| **M2 输出协议** | Teaching Card 格式模板（标准 / Mini / Enhanced） | 统一输出结构 |
+| **M2 输出协议** | Teaching Card 格式模板（标准 / Mini / 压缩卡 / Enhanced） | 统一输出结构 |
 | **M3 触发规则** | 8 类触发操作 + 3 条合并规则 + 跳过规则 | 控制生成时机 |
 | **M4 质量标准** | 各板块质量检查清单 + 语言风格规范 + 信息密度控制 | 保证输出质量 |
 | **M5 Few-Shot** | 3 个高质量完整示例 | 让 AI 精确理解期望输出 |

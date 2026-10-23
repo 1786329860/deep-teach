@@ -343,10 +343,10 @@ const delay = retryDelay * Math.pow(2, attempt) + Math.random() * 500;
 |---------|-------------------------------|-------------------------------|--------------------|----------------------------|
 | **核心技术** | React Hooks API + 原生 fetch | @tanstack/react-query | Vercel SWR | useEffect + fetch |
 | **核心优势** | 零依赖、完全可控、学习价值最高 | 开箱即用的缓存/后台刷新/乐观更新/DevTools | 极简 API（一行声明式调用）、体积小 | 无任何抽象，最直观 |
-| **主要劣势 | 需要自行实现缓存/去重/乐观更新等功能 | 包体积较大(~13kb)、引入额外抽象层 | 功能少于 React Query、无 mutation 支持 | 大量样板代码、无重试/缓存、易出错 |
+| **主要劣势** | 需要自行实现缓存/去重/乐观更新等功能 | 包体积较大(~13kb)、引入额外抽象层 | 功能少于 React Query、无 mutation 支持 | 大量样板代码、无重试/缓存、易出错 |
 | **适用场景** | 学习理解 Hook 原理、简单项目、需要完全定制 | 生产级应用、复杂缓存需求、团队协作 | 中小型项目、追求极简、Vercel 生态 | 极简原型、一次性脚本、不想学新概念 |
 | **性能表现** | 基准（原生性能） | **更优**（智能去重 + 缓存共享减少网络请求） | **更优**（SWR 策略：Stale-While-Revalidate） | 较差（无缓存，每次挂载都请求） |
-| **代码量 | ~80 行（本示例） | ~10 行（声明式用法） | ~5 行（极致精简） | ~30 行（基础版无重试） |
+| **代码量** | ~80 行（本示例） | ~10 行（声明式用法） | ~5 行（极致精简） | ~30 行（基础版无重试） |
 | **学习曲线** | 中等（需理解 Hooks 机制） | 中等（需理解 cache/queryKey 概念） | 平缓（API 极简） | 低（但容易写出 bug） |
 
 > **对比总结：** 手写 Custom Hook 在生产环境中通常不是最优选 —— React Query 和 SWR 已经将数据获取的最佳实践工程化了。但在学习和教学场景中，手写 Hook 具有不可替代的价值：它迫使开发者直面每一个设计决策（状态如何组织、副作用何时清理、竞态如何处理），而这些决策正是 React Query/SWR 在底层已经替你做好的事。理解了这个 Hook 的每一行代码，你就能真正读懂 React Query 的源码。
@@ -374,7 +374,7 @@ const delay = retryDelay * Math.pow(2, attempt) + Math.random() * 500;
 | 规范来源 | React 官方 Hooks API（2019年2月正式发布） | ⭐⭐⭐⭐⭐ |
 | 文档质量 | React 官方文档有完整的 Hooks 参考 + 规则 + FAQ | 优秀 (9/10) |
 | 社区实践 | 几乎所有现代 React 项目都在使用 Hooks | 广泛验证 |
-| 工具支持 | ESLint react-hooks规则、React DevTools Hooks 面板 | 完善 |
+| 工具支持 | ESLint react-hooks 规则、React DevTools Hooks 面板 | 完善 |
 | 长期维护 | React Core Team 活跃维护，属于稳定 API | 活跃 |
 
 ### ⑥ 🔗 知识延伸与迁移
@@ -421,5 +421,5 @@ const delay = retryDelay * Math.pow(2, attempt) + Math.random() * 500;
 | 📖 官方文档 | React Docs - Hooks Overview | 最权威的 Hooks 入门指南 | https://react.dev/reference/react |
 | 📕 经典书籍 | 《Effective TypeScript》Item 15 | 泛型约束与类型推导的最佳实践 | Dan Vanderkam 著 |
 | 📝 深入文章 | "Making Sense of React Hooks" by Dan Abramov | React Core Team 成员对 Hooks 设计哲学的深度解读 | https://overreacted.io/making-sense-of-react-hooks/ |
-| 💻 源码阅读 | ReactFiberHooks (React 18 source) | 阅读 `mountWorkInProgressHook` / `updateWorkInProgressHook` / `dispatchAction` | https://github.com/facebook/react/blob/main/packages/react-react/src/ReactFiberHooks.js |
+| 💻 源码阅读 | ReactFiberHooks (React 18 source) | 阅读 `mountWorkInProgressHook` / `updateWorkInProgressHook` / `dispatchAction` | https://github.com/facebook/react/blob/main/packages/react-reconciler/src/ReactFiberHooks.js |
 | 🎬 视频 | Ben Awad - 10 React Hooks You Probably Need | 实用的 Hooks 模式合集 | YouTube |
