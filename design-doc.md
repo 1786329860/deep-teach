@@ -254,7 +254,7 @@ deep-teach/
 ├── design-doc.md                  # 本设计文档
 ├── POST_TEMPLATE.md               # 项目介绍与论坛发帖模板
 ├── LICENSE                        # MIT 许可证
-├── examples/
+├── references/
 │   ├── example-01-dependency.md    # 示例1：依赖安装场景
 │   ├── example-02-code-write.md    # 示例2：代码编写场景
 │   └── example-03-architecture.md  # 示例3：架构决策（Enhanced 卡）

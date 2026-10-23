@@ -240,9 +240,9 @@ next() 将控制权传递给下一个中间件；如果不调用 next()，
 - **GitHub 仓库**：https://github.com/1786329860/deep-teach
 - **核心文件**：[SKILL.md](https://github.com/1786329860/deep-teach/blob/main/SKILL.md)（M1–M6 完整 Prompt 协议）
 - **Few-Shot 示例**：
-  - [示例1：依赖安装 - Express 初始化](https://github.com/1786329860/deep-teach/blob/main/examples/example-01-dependency.md)
-  - [示例2：代码编写 - React Hook](https://github.com/1786329860/deep-teach/blob/main/examples/example-02-code-write.md)
-  - [示例3：架构决策 - PostgreSQL 选型](https://github.com/1786329860/deep-teach/blob/main/examples/example-03-architecture.md)
+  - [示例1：依赖安装 - Express 初始化](https://github.com/1786329860/deep-teach/blob/main/references/example-01-dependency.md)
+  - [示例2：代码编写 - React Hook](https://github.com/1786329860/deep-teach/blob/main/references/example-02-code-write.md)
+  - [示例3：架构决策 - PostgreSQL 选型](https://github.com/1786329860/deep-teach/blob/main/references/example-03-architecture.md)
 - **设计文档**：[design-doc.md](https://github.com/1786329860/deep-teach/blob/main/design-doc.md)
 
 ---

@@ -101,7 +101,7 @@ deep-teach/
 ├── design-doc.md                    # 设计文档（规格说明）
 ├── POST_TEMPLATE.md                 # 项目介绍与论坛发帖模板
 ├── LICENSE                          # MIT 许可证
-├── examples/
+├── references/
 │   ├── example-01-dependency.md      # 示例1：依赖安装（Express 后端初始化）
 │   ├── example-02-code-write.md      # 示例2：代码编写（React useFetch Hook）
 │   └── example-03-architecture.md    # 示例3：架构决策（PostgreSQL vs MongoDB）
@@ -114,7 +114,7 @@ deep-teach/
 
 ### 作为 AI 编程助手 Skill 使用
 
-将 [SKILL.md](SKILL.md) 的内容加载到 AI 助手的自定义指令中，按所用工具的加载方式启用深度教学模式。M5 引用了 `examples/` 中的示例文件，应同时保留并确保助手能够读取它们。
+将 [SKILL.md](SKILL.md) 的内容加载到 AI 助手的自定义指令中，按所用工具的加载方式启用深度教学模式。M5 引用了 `references/` 中的示例文件，应同时保留并确保助手能够读取它们。
 
 ### Prompt 协议六大模块
 

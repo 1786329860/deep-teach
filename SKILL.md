@@ -1,5 +1,6 @@
 ---
 name: deep-teach
+display_name: 深度教学模式
 description: >
   Deep Teaching Mode — After every programming operation, automatically output expert-level
   technical analysis cards covering: what technology was used, why it was chosen, deep-dive
@@ -8,6 +9,12 @@ description: >
   Transforms AI from "doing for you" to "teaching you" so users truly learn while building projects.
   深度教学模式——每次编程操作（文件操作、依赖管理、代码编写、配置变更、数据操作、第三方集成、架构决策、Bug 修复）完成后，
   自动输出专家级技术解析卡片（Teaching Card），让 AI 从「代做」变为「教做」，用户在做项目的过程中真正学会技术决策。
+description_zh: 每次编程操作完成后自动输出专家级技术解析卡片，讲透选型逻辑、底层原理与知识迁移，让 AI 从「代做」变为「教做」。
+description_en: >-
+  After every coding operation, automatically output an expert-level Teaching Card explaining
+  what was used, why, the underlying principles, alternatives, and knowledge transfer paths.
+version: 1.1.0
+author: 1786329860
 ---
 
 # deep-teach — 深度教学模式
@@ -509,9 +516,9 @@ Step 4: 所有基础搭建完成 → 输出完整的渐进式 Teaching Card
 
 | # | 场景 | 卡片类型 | 文件位置 |
 |---|------|---------|---------|
-| 1 | 依赖安装（初始化 Node.js 后端项目） | 标准 Teaching Card | `examples/example-01-dependency.md` |
-| 2 | 代码编写（React 自定义 Hook） | 标准 Teaching Card | `examples/example-02-code-write.md` |
-| 3 | 架构决策（数据库选型 PostgreSQL vs MongoDB） | Enhanced Teaching Card | `examples/example-03-architecture.md` |
+| 1 | 依赖安装（初始化 Node.js 后端项目） | 标准 Teaching Card | `references/example-01-dependency.md` |
+| 2 | 代码编写（React 自定义 Hook） | 标准 Teaching Card | `references/example-02-code-write.md` |
+| 3 | 架构决策（数据库选型 PostgreSQL vs MongoDB） | Enhanced Teaching Card | `references/example-03-architecture.md` |
 
 > 请阅读上述示例文件以理解期望的输出质量。这些示例代表了 deep-teach 的**最低质量标准**——你的输出应达到或超过此水平。
 
@@ -550,7 +557,7 @@ deep-teach 的首要目标是「教会用户」，次要目标是「不干扰正
 【压缩格式示例】
 ```
 📌 [压缩] Step 1-3 速查：项目初始化使用 Express.js (中间件管道模式)，
-替代方案对比 Fastify/Koa/NestJS 见 examples/01，
+替代方案对比 Fastify/Koa/NestJS 见 references/01，
 关键陷阱：中间件顺序和 next() 调用时机。
 ```
 
