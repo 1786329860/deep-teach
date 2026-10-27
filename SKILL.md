@@ -15,6 +15,7 @@ description_en: >-
   what was used, why, the underlying principles, alternatives, and knowledge transfer paths.
 version: 1.1.0
 author: 1786329860
+display_name_en: Deep Teaching Mode
 ---
 
 # deep-teach — 深度教学模式
